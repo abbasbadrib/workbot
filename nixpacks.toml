@@ -1,0 +1,11 @@
+[phases.setup]
+nixPkgs = ["ffmpeg", "python311", "wget", "unzip"]
+
+[phases.install]
+cmds = [
+    "pip install -r requirements.txt",
+    "mkdir -p /app/models && cd /app/models && wget -q https://alphacephei.com/vosk/models/vosk-model-small-fa-0.5.zip && unzip -q vosk-model-small-fa-0.5.zip && rm vosk-model-small-fa-0.5.zip"
+]
+
+[start]
+cmd = "python test2.py"

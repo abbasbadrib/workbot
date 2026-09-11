@@ -1,0 +1,40 @@
+# دیتابیس
+business.db
+business.db-*
+*.db
+*.db-shm
+*.db-wal
+
+# مدل‌های حجیم
+vosk-model-small-fa-0.5/
+vosk-model-*.zip
+*.nemo
+*.bin
+
+# لاگ و بکاپ
+logs/
+backups/
+*.log
+
+# پایتون
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+venv/
+env/
+.venv/
+
+# متغیرهای محیطی
+.env
+.env.*
+
+# سیستم
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
